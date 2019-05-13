@@ -1,4 +1,4 @@
-package com.lobster.testtask;
+package com.lobster.testtask.entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -25,6 +25,13 @@ public class User {
 
     public User() {
 
+    }
+
+    public User(String login, String fullName, LocalDate dateOfBirth, String gender) {
+        this.login = login;
+        this.fullName = fullName;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
     }
 
     public Long getId() {
